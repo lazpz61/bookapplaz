@@ -1,0 +1,26 @@
+.header-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: aliceblue;
+
+    .left-column, .right-column {
+        margin: 10px 20px;
+    }
+
+    .left-column {
+        img {
+        width: 75px;
+        }
+    }
+
+        .right-column {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr auto;
+            justify-items: right;
+            align-items: center;
+            gap: 25px;
+    }
+
+}

@@ -1,0 +1,33 @@
+// Good for Capstone to style the workouts being rendered
+.portfolio-wrapper {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .books-wrapper {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        justify-items: center;
+        gap: 25px;
+        margin-top: 25px;
+        
+        .book-wrapper {
+            width: 100%;
+            border: 1px solid black;
+            border-radius: 10px;
+            background-color: antiquewhite;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            a {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+}
