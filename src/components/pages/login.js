@@ -33,7 +33,7 @@ export default class Login extends Component {
             })
         }
         else {
-            fetch("https://lmp-book-app-api-project.herokuapp.com/user/verify", {
+            fetch("https://mo-books-laz-problems-api-e45ee9b8a20c.herokuapp.com/user/verify", {
                 method: "POST",
                 headers: { "content-type": "application/json"},
                 body: JSON.stringify({
