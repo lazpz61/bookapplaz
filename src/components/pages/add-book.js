@@ -29,7 +29,7 @@ export default class AddBook extends Component {
    handleSubmit(event) {
        event.preventDefault()
 
-       fetch("https://lmp-book-app-api-project.herokuapp.com/book/add", {
+       fetch("https://mo-books-laz-problems-api-e45ee9b8a20c.herokuapp.com/book/add", {
            method: "POST",
            headers: { "content-type": "application/json"},
            body: JSON.stringify({
