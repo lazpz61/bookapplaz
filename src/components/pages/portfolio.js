@@ -19,7 +19,7 @@ export default class Portfolio extends Component {
             let userData = {}
             let booksData = []
 
-            await fetch(`https://mo-books-laz-problems-api-e45ee9b8a20c.herokuapp.com//user/get/username/${Cookies.get("username")}`)
+            await fetch(`https://lmp-book-app-api-project.herokuapp.com/user/get/username/${Cookies.get("username")}`)
             .then(response => response.json())
             .then(data => userData = data) 
             .catch(error => {
@@ -34,7 +34,7 @@ export default class Portfolio extends Component {
 
             this.props.updateUserId(userData.id)
 
-            await fetch(`https://mo-books-laz-problems-api-e45ee9b8a20c.herokuapp.com/book/get/user/${userData.id}`)
+            await fetch(`https://lmp-book-app-api-project.herokuapp.com/book/get/user/${userData.id}`)
             .then(response => response.json())
             .then(data => booksData = data) 
             .catch(error => {

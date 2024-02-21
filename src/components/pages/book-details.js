@@ -20,7 +20,7 @@ export default class BookDetails extends Component {
    }
 
    componentDidMount(){
-       fetch(`https://mo-books-laz-problems-api-e45ee9b8a20c.herokuapp.com/book/get/${this.props.match.params.id}`)
+       fetch(`https://lmp-book-app-api-project.herokuapp.com/book/get/${this.props.match.params.id}`)
        .then(response => response.json())
        .then(data => this.setState({
            title: data.title,
@@ -43,7 +43,7 @@ export default class BookDetails extends Component {
     handleSubmit(event) {
         event.preventDefault()
 
-        fetch(`https://mo-books-laz-problems-api-e45ee9b8a20c.herokuapp.com/book/update/${this.props.match.params.id}`, {
+        fetch(`https://lmp-book-app-api-project.herokuapp.com/book/update/${this.props.match.params.id}`, {
             method: "PUT",
             headers: { "content-type": "application/json"},
             body: JSON.stringify({
@@ -64,7 +64,7 @@ export default class BookDetails extends Component {
     }
 
     handleDelete() {
-        fetch(`https://mo-books-laz-problems-api-e45ee9b8a20c.herokuapp.com/book/delete/${this.props.match.params.id}`, {
+        fetch(`https://lmp-book-app-api-project.herokuapp.com/book/delete/${this.props.match.params.id}`, {
             method: "DELETE",  
         })
         .then(response => response.json())

@@ -39,7 +39,7 @@
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-eslint": "^7.2.3",
-    "babel-loader": "^9.1.3",
+    "babel-loader": "^7.1.5",
     "babel-plugin-async-to-promises": "^1.0.5",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-polyfill": "^6.26.0",
@@ -47,8 +47,13 @@
     "clean-webpack-plugin": "^0.1.16",
     "copy-webpack-plugin": "^12.0.2",
     "cross-env": "^5.2.0",
+<<<<<<< HEAD
     "css-loader": "^6.10.0",
     "eslint": "^8.56.0",
+=======
+    "css-loader": "^1.0.0",
+    "eslint": "^4.2.0",
+>>>>>>> parent of 07c7b4a (update)
     "eslint-loader": "^1.9.0",
     "eslint-plugin-react": "^7.1.0",
     "express": "^4.18.2",
@@ -67,10 +72,18 @@
     "redux": "4.0.5",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.21.0",
+<<<<<<< HEAD
     "webpack": "^5.90.3",
     "webpack-cli": "^4.7.0",
     "webpack-dev-server": "^5.0.2",
     "webpack-hot-middleware": "^2.26.1",
+=======
+    "webpack": "4.42.1",
+    "webpack-cli": "3.3.11",
+    "webpack-dev-middleware": "3.7.2",
+    "webpack-dev-server": "3.10.3",
+    "webpack-hot-middleware": "2.25.0",
+>>>>>>> parent of 07c7b4a (update)
     "webpack-merge": "4.2.2"
   },
   "devDependencies": {

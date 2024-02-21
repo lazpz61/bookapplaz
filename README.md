@@ -1,5 +1,10 @@
 # React/Redux/Router Starter Project
 
-> Provided for the students of the [Bottega Code School](https://bottega.tech/)
+This applicaiton is for Book Blogging and utilizes the below features.
 
-*Fork from [es6-webpack2-starter](https://github.com/micooz/es6-webpack2-starter)*
+1) REACT.JS
+2) Fetch Calls to API's
+3) Cookies
+4) Props
+5) Browser Router
+6) Links
