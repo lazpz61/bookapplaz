@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route} from "react-router-dom";
 
-import Header from "./header"
+import Header from "/header"
 import Home from "./pages/homepage";
 import Signup from "./pages/signup"
 import Login from "./pages/login"
 import Portfolio from "./pages/portfolio"
 import AddBook from "./pages/add-book"
 import BookDetails from "./pages/book-details"
-import Footer from "./footer"
+import Footer from "/footer"
 
 
 
@@ -32,7 +32,7 @@ export default class App extends Component {
   render() {
     return (
     <div>
-        <BrowserRouter>
+       {/* <BrowserRouter> */}
 
           <div className='app'>
 
@@ -51,7 +51,7 @@ export default class App extends Component {
 
           </div>
 
-        </BrowserRouter>
+        {/* </BrowserRouter> */}
     </div>
     );
   }
