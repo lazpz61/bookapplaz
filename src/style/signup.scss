@@ -91,3 +91,28 @@
     flex-direction: column;
     justify-content: center; /* Centers form content vertically in case of extra space */
   }
+
+
+  @media (max-width: 450px) {
+    .signup-container {
+      flex-direction: column; /* Stack children vertically */
+      align-items: stretch; /* Stretch children to match the container's width */
+      height: auto; /* Adjust height to fit the content */
+    }
+  
+    .side-image {
+      max-width: 100%; /* Make images take full available width */
+      height: auto; /* Adjust height automatically to maintain aspect ratio */
+      object-fit: contain; /* Ensure full image is visible */
+    }
+  
+    .signup-wrapper {
+      width: 90%; /* Adjust width to fit smaller screens, with some padding */
+      margin: 20px auto; /* Add some vertical margin */
+      flex: 0 0 auto; /* Do not grow or shrink, but respect the width property */
+    }
+  }
+
+
+
+
