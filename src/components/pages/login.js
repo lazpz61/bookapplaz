@@ -12,6 +12,7 @@ export default class Login extends Component {
             password: "",
             error: false,
             errorMessage: ""
+            // userData: {}
 
         }
 
@@ -33,7 +34,7 @@ export default class Login extends Component {
             })
         }
         else {
-            fetch("https://mo-books-laz-problems-api-e45ee9b8a20c.herokuapp.com/user/verify", {
+            fetch("https://mo-books-laz-problems-api-e45ee9b8a20c.herokuapp.com/user/verification", {
                 method: "POST",
                 headers: { "content-type": "application/json"},
                 body: JSON.stringify({
@@ -52,6 +53,7 @@ export default class Login extends Component {
                 }
                 else if (data === "User Verified"){
                     Cookies.set("username", this.state.username)
+                    // Cookies.set("userData",this.state.username)
                     this.props.history.push("/portfolio")
                 }
             })

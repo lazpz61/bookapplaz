@@ -11,6 +11,7 @@ export default class Portfolio extends Component {
             data: [],
             error: false,
             errorMessage: ""
+            // userData: {}
          }
     }
 
@@ -34,7 +35,7 @@ export default class Portfolio extends Component {
 
             this.props.updateUserId(userData.id)
 
-            await fetch(`https://mo-books-laz-problems-api-e45ee9b8a20c.herokuapp.com/book/get/user/${userData.id}`)
+            await fetch(`https://mo-books-laz-problems-api-e45ee9b8a20c.herokuapp.com/book/get/${userData.id}`)
             .then(response => response.json())
             .then(data => booksData = data) 
             .catch(error => {
