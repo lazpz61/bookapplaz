@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Cookies from "js-cookie";
-
+import '../../style/login.scss';
 
 export default class Login extends Component {
     constructor(){
@@ -71,29 +71,31 @@ export default class Login extends Component {
 
     render() {
         return (
+            <div className="login-container"> {/* This is the container with the background image */}
             <div className="login-wrapper">
                 <h3>Fill out the form to Login!</h3>
                 <form onSubmit={this.handleSubmit}>
                     <input 
-                    type="text" 
-                    placeholder="Username"
-                    value={this.state.username}
-                    name="username"
-                    onChange={this.handleChange} 
+                        type="text" 
+                        placeholder="Username"
+                        value={this.state.username}
+                        name="username"
+                        onChange={this.handleChange} 
                     />
                     
                     <input 
-                    type="Password" 
-                    placeholder="Password"
-                    value={this.state.password}
-                    name="password"
-                    onChange={this.handleChange} 
+                        type="Password" 
+                        placeholder="Password"
+                        value={this.state.password}
+                        name="password"
+                        onChange={this.handleChange} 
                     />
                     
                     <button type="submit">Login</button>
                 </form>
-                <p style={{ visibility: this.state.error ? "visible" : "hidden", height: "18px" }}>{this.state.errorMessage}</p>
+                <p className={this.state.error ? "visible" : ""}>{this.state.errorMessage}</p>
             </div>
+        </div>
         )
     }
 }

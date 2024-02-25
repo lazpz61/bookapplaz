@@ -8,7 +8,6 @@ import Login from "./pages/login"
 import Portfolio from "./pages/portfolio"
 import AddBook from "./pages/add-book"
 import BookDetails from "./pages/book-details"
-import Footer from "./footer"
 
 
 
@@ -46,8 +45,6 @@ export default class App extends Component {
                 <Route path="/portfolio/add-book" render={(props) => <AddBook userId={this.state.userId} {...props}/>} />
                 <Route path="/portfolio/book-details/:id" component={BookDetails} />
               </Switch>
-
-            <Footer />
 
           </div>
 

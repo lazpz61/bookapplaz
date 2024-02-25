@@ -1,0 +1,72 @@
+.login-container {
+    height: 100vh; /* Full viewport height */
+    background-image: url('../../static/assets/images/bookWorms.png'); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+  }
+  
+  .login-wrapper {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 10px; /* Rounded corners for the form */
+    padding: 20px;
+    width: 300px; /* Adjust width as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+    position: relative; /* For positioning the elements inside */
+  }
+  
+  .login-wrapper h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px; /* Space below the header */
+  }
+  
+  .login-wrapper form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login-wrapper input {
+    width: calc(100% - 20px); /* Full width minus padding */
+    padding: 10px;
+    margin-bottom: 10px; /* Margin for spacing */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .login-wrapper button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #5cb85c; /* Green color */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    margin-top: 10px; /* Margin above the button */
+  }
+  
+  .login-wrapper button:hover {
+    background-color: #4cae4c; /* Slightly darker green on hover */
+  }
+  
+  /* Error message styles */
+  .login-wrapper p {
+    color: #d9534f; /* Bootstrap 'danger' color */
+    text-align: center; /* Center the text */
+    font-size: 0.9em; /* Slightly smaller font size */
+    transition: visibility 0s, opacity 0.5s linear; /* Smooth transition for visibility */
+    height: 18px; /* Fixed height for layout stability */
+    opacity: 0; /* Hide by default */
+    visibility: hidden; /* Hide by default */
+  }
+  
+  .login-wrapper p.visible {
+    visibility: visible; /* Make visible when there's an error */
+    opacity: 1; /* Fully opaque when there's an error */
+  }

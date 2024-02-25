@@ -1,5 +1,9 @@
 import React, { Component } from "react";
 import Cookies from "js-cookie";
+import '../../style/signup.scss';
+import '../../../static/assets/images/bookWormSingle2.png';
+import '../../../static/assets/images/bookWormSingle.png';
+
 
 export default class Signup extends Component {
     constructor(){
@@ -67,7 +71,8 @@ export default class Signup extends Component {
                 console.log("error creating user", error)
                 this.setState ({
                     error: true,
-                    errorMessage: "Error: Please try again later ..."
+                    // errorMessage: "Error: Please try again later ..."
+                    errorMessage: "I Love Ayisha Masood"
                 })
             })
         }
@@ -76,7 +81,12 @@ export default class Signup extends Component {
 
     render() {
         return (
+        <div className="signup-container">
+            <img src="../../../static/assets/images/bookWormSingle.png" alt="Left Decoration" className="side-image left" />
+
+
             <div className="signup-wrapper">
+
                 <h3>Fill out the form to sign up!</h3>
                 <form onSubmit={this.handleSubmit}>
                     <input 
@@ -102,8 +112,12 @@ export default class Signup extends Component {
                     />
                     <button type="submit">Sign Up</button>
                 </form>
-                <p style={{ visibility: this.state.error ? "visible" : "hidden", height: "18px" }}>{this.state.errorMessage}</p>
+                <p className={this.state.error ? "visible" : ""}>{this.state.errorMessage}</p>
+                
             </div>
+
+            <img src="../../../static/assets/images/bookWormSingle2.png" alt="Right Decoration" className="side-image right" />
+        </div>
         )
     }
 }

@@ -1,0 +1,33 @@
+.home-wrapper {
+    height: 100vh; /* Full height */
+    width: 100%; /* Full width */
+    background-image: url('../../static/assets/images/bookWorms.png'); /* The image you provided */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /* Cover the entire space */
+    display: flex;
+    align-items: center; /* Align buttons vertically */
+    justify-content: center; /* Align buttons horizontally */
+  }
+
+  .button {
+    display: block;
+    width: 200px; /* Width of your buttons */
+    margin: 10px; /* Spacing between buttons */
+    padding: 15px 25px; /* Padding inside buttons */
+    border: 2px solid white; /* Border color */
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: rgba(255, 255, 255, 0.7); /* Button hover effect */
+  }
+  
+  .button-signup {
+    width: 220px; /* Make sign up button wider */
+  }

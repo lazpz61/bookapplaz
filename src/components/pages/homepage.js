@@ -1,5 +1,6 @@
 import React from "react";
 import Cookies from "js-cookie"
+import '../../style/homePage.scss';
 
 export default function home(props) {
     if (Cookies.get("username")) {
@@ -8,7 +9,9 @@ export default function home(props) {
     
     return (
         <div className="home-wrapper">
-            Home
+            <a href="/signup" className="button button-signup">Sign Up</a>
+            <a href="/login" className="button">Login</a>
         </div>
+
     )
 }
