@@ -71,8 +71,7 @@ export default class Signup extends Component {
                 console.log("error creating user", error)
                 this.setState ({
                     error: true,
-                    // errorMessage: "Error: Please try again later ..."
-                    errorMessage: "I Love Ayisha Masood"
+                    errorMessage: "Error: Please try again later ..."
                 })
             })
         }
