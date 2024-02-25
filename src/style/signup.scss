@@ -1,33 +1,4 @@
-//The code below is part of the sign up container
-
-.signup-container {
-    display: flex; /* Use flex to arrange children horizontally */
-    justify-content: center; /* Center children horizontally */
-    align-items: center; /* Center children vertically */
-    height: 100vh; /* Take full height of the viewport */
-    background-color: #baebba;
-    // max-width: 100vw;
-  }
-  
-  .side-image {
-    flex: 1; /* Take up equal amount of space on the sides */
-    object-fit: cover; /* Cover the space without losing aspect ratio */
-    height: 100vh; /* Full height to match the container */
-  }
-  
-  .side-image.left {
-    margin-right: 20px; /* Add space between image and the wrapper */
-  }
-  
-  .side-image.right {
-    margin-left: 20px; /* Add space between image and the wrapper */
-  }
-
-
-
-
-
-//The code below is part of the sign up wrapper
+// //The code below is part of the sign up wrapper
 .signup-wrapper {
     background-color: #fff; /* White background */
     border-radius: 10px; /* Rounded corners for the modal */
@@ -88,4 +59,35 @@
   .signup-wrapper p.visible {
     visibility: visible; /* Make visible when there's an error */
     opacity: 1; /* Fully opaque when there's an error */
+  }
+
+
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #baebba;
+    overflow: hidden; /* Prevents horizontal scrolling */
+  }
+  
+  /* Side Images */
+  .side-image {
+    flex: 1; /* Allows images to grow and shrink equally */
+    object-fit: cover; /* Covers the height without distorting aspect ratio */
+    height: 100vh;
+    max-width: 33%; /* Limits width to 1/3rd of the container */
+  }
+  
+  /* Signup Wrapper */
+  .signup-wrapper {
+    flex: 1 0 300px; /* flex-grow: 1, flex-shrink: 0, flex-basis: 300px */
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 40px 20px; /* Adds some margin around the form */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers form content vertically in case of extra space */
   }
