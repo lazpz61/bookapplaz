@@ -27,8 +27,8 @@ function header(props) {
 
             </div>  
             : <div className="right-column">
-                <Link to="/signup">Signup</Link>
-                <Link to="/login">Login</Link>
+                <Link to="/signup" className="header-signup">Signup</Link>
+                <Link to="/login" className="header-login">Login</Link>
             </div>}
 
         </div>

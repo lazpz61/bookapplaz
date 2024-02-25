@@ -2,11 +2,8 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: aliceblue;
-
-    .left-column, .right-column {
-        margin: 10px 20px;
-    }
+    background-color: rgb(177, 245, 113);
+    align-items: flex-end;
 
     .left-column {
         img {
@@ -15,12 +12,39 @@
     }
 
         .right-column {
+            display:flex;
             width: 100%;
             display: grid;
             grid-template-columns: 1fr auto;
             justify-items: right;
             align-items: center;
-            gap: 25px;
+            gap: 15px;
+            padding: -15px -25px; /* Padding inside buttons */
+            padding-right: 10px;;
+            color: rgb(34, 245, 7);
+            text-align: center;
+            text-decoration: none;
+            font-size: 20px;
+            transition: background-color 0.3s;
+
+            .header-signup, .header-login {
+                padding: 10px 15px; /* Padding inside the links */
+                background-color: gray; /* Background color */
+                border: 2px solid apple red; /* Border color - replace with actual color */
+                color: rgb(0, 59, 0); /* Text color */
+                text-align: center;
+                text-decoration: none;
+                font-size: 16px; /* Adjust as needed */
+                transition: background-color 0.3s;
+                cursor: pointer; /* Changes cursor to pointer */
+                border-radius: 4px; /* Rounded borders */
+            }
+            
+            .header-signup:hover, .header-login:hover {
+                background-color: #d3d3d3; /* Lighter gray on hover */
+                border-color: darkred; /* Darker red on hover - replace with actual color */
+            }
     }
 
 }
+

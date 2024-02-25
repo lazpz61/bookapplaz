@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"
 import Cookies from "js-cookie"
 import '../../style/homePage.scss';
 
@@ -9,8 +10,8 @@ export default function home(props) {
     
     return (
         <div className="home-wrapper">
-            <a href="/signup" className="button button-signup">Sign Up</a>
-            <a href="/login" className="button">Login</a>
+            <Link to="/signup" className="button button-signup">Signup</Link>
+                <Link to="/login" className="button">Login</Link>
         </div>
 
     )
