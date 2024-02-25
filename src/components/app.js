@@ -12,6 +12,7 @@ import BookDetails from "./pages/book-details"
 
 
 
+
 export default class App extends Component {
   constructor(){
     super()
@@ -31,7 +32,7 @@ export default class App extends Component {
   render() {
     return (
     <div>
-        <BrowserRouter>
+       {/* <BrowserRouter> */}
 
           <div className='app'>
 
@@ -48,7 +49,7 @@ export default class App extends Component {
 
           </div>
 
-        </BrowserRouter>
+        {/* </BrowserRouter> */}
     </div>
     );
   }

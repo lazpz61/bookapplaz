@@ -44,9 +44,9 @@ export default class Signup extends Component {
         }
         else {
 
-       
+            
 
-            fetch("https://lmp-book-app-api-project.herokuapp.com/user/add", {
+            fetch("https://mo-books-laz-problems-api-e45ee9b8a20c.herokuapp.com/user/add", {
                 method: "POST",
                 headers: { "content-type": "application/json"},
                 body: JSON.stringify({ 
