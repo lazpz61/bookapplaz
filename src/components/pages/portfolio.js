@@ -8,7 +8,7 @@ export default class Portfolio extends Component {
 
         this.state ={
             loading: true,
-            data: [],
+            data: {},
             error: false,
             errorMessage: ""
             // userData: {}

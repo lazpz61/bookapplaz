@@ -20,15 +20,20 @@ export default class BookDetails extends Component {
    }
 
    componentDidMount(){
+                                                                                                                                    
        fetch(`https://mo-books-laz-problems-api-e45ee9b8a20c.herokuapp.com/book/get/${this.props.match.params.id}`)
        .then(response => response.json())
-       .then(data => this.setState({
-           title: data.title,
-           author: data.author,
-           review: data.review,
-           recommend: data.recommend
-       }))
-       .catch(error => console.log("Error catching book ", error))
+       .then(data => {
+        this.setState({
+            title: data.title,
+            author: data.author,
+            review: data.review,
+            recommend: data.recommend
+            
+        })})
+       
+       .catch(error => console.log("Error catching book: ", error))
+       
    }
 
 
@@ -69,28 +74,28 @@ export default class BookDetails extends Component {
         })
         .then(response => response.json())
         .then(data => {
-            if (data === "Book Deleted") {
+            if (data === "Book deleted") {
                 this.props.history.push("/portfolio")
             }
         })
         .catch(error => console.log("Error deleting book, ", error))
     }
 
-   render() {
-       if(this.state.title === undefined) {
-           this.props.history.push("/portfolio")
-       }
-
+   render() { 
+    console.log("re-renderinging");
        return (
+        
            <div className='book-detail-wrapper'>
+            
              <Link to="/portfolio">Back to Portfolio</Link>
              <h3>Fill out the form to update this book!</h3>
              <BookForm 
+             
                 title={this.state.title}
                 author={this.state.author}
                 review={this.state.review}
                 recommend={this.state.recommend}
-                handleChange={this.handleCheck}
+                handleChange={this.handleChange}
                 handleCheck={this.handleCheck}
                 handleSubmit={this.handleSubmit}
                 submitText="Update Book"

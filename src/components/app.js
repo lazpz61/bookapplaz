@@ -12,7 +12,6 @@ import BookDetails from "./pages/book-details"
 
 
 
-
 export default class App extends Component {
   constructor(){
     super()
@@ -44,7 +43,7 @@ export default class App extends Component {
                 <Route path="/login" component={Login} />
                 <Route exact path="/portfolio" render={(props) => <Portfolio updateUserId={this.updateUserId} {...props}/>} />
                 <Route path="/portfolio/add-book" render={(props) => <AddBook userId={this.state.userId} {...props}/>} />
-                <Route path="/portfolio/book-details/:id" component={BookDetails} />
+                <Route path="/portfolio/book-details/:id" component={BookDetails}/>
               </Switch>
 
           </div>

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function bookform(props) {
+export default function bookform(props) { console.log("re-rendering from Book Form");
    return (
     
     <form onSubmit={props.handleSubmit}>

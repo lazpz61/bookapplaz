@@ -42,7 +42,7 @@ export default class AddBook extends Component {
        })
        .then(response => response.json())
        .then(data => {
-           if (data === "Book Added") {
+           if (data === "Book added") {
             this.props.history.push("/portfolio")
            }
        })
